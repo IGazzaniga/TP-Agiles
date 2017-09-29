@@ -1,0 +1,16 @@
+
+/* Nosotros */
+.container-n{
+    width: 100vw;
+    height: 70vh;
+    background:white;
+    text-align: left;
+    position: relative;
+}
+
+.container-n h1{
+    writing-mode: sideways-lr;
+    float: left;
+    margin-right: 100px;
+    font-size: 60px;
+}

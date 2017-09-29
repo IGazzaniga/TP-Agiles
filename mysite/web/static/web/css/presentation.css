@@ -1,0 +1,76 @@
+/* ---------------5 imagenes de presentacion ---------*/
+.container-agile{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;  /* Margin y padding no modifican el ancho del elemento */
+}
+
+.container-agile .box{
+    width: 20vw;
+    text-align: center;
+    line-height: 100vh;   /* Separacion de los parrafos */
+    flex-grow: 1;           /* Tamaño de cada elemento con respecto a los demas */
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.container-agile .box h1{
+    margin: 0;
+    padding: 0;
+    line-height: 100vh;
+    font-size: 2em;
+    background: rgba(0, 0, 0, .8);
+    transition: 1s;
+}
+
+
+.container-agile .box h1 span{
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    transition: 1s;
+    color: #fff;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container-agile .box:hover h1{
+    background: rgba(0, 0, 0, 0);
+}
+
+.container-agile .box:hover h1 span{
+    color: #262626;
+    background: rgba(255, 255, 255,.8);
+    letter-spacing: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.container-agile .box:hover{
+    width: 30vw;
+}
+
+.container-agile .box:nth-child(1){
+    background-image: url(../img/agile.jpeg);
+    background-position-x: 60%;
+}
+
+.container-agile .box:nth-child(2){
+    background-image: url(../img/scrum.jpeg);
+}
+
+.container-agile .box:nth-child(3){
+    background-image: url(../img/xp.jpeg);
+    background-position-x: 85%;
+}
+
+.container-agile .box:nth-child(4){
+    background-image: url(../img/lean.jpeg);
+}
+
+.container-agile .box:nth-child(5){
+    background-image: url(../img/kanban.jpeg);
+    background-position-x: 50%;
+}
