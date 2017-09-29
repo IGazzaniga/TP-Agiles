@@ -1,12 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hola</p>
-</body>
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Metodologías Ágiles</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'web/css/style.css' %}"> 
+	</head>
+	<body>
+
+		<!-- Header -->
+		{% block header %}
+			<header id="header">
+				<div class="inner">
+					<div class="content">
+						<h1>Metodologías Ágiles</h1>
+						<ul>
+							<li><a href="https://trello.com/b/PpyiZnTl/utn-frlp-%C3%A1giles">Trello</a></li>
+							<li><a href="https://utn-frlp-agile.slack.com/messages/G6JJMDVCG/">Slack</a></li>
+						</ul>
+						
+						
+						<a href="#" class="button big alt"><span>Continuar</span></a>
+					</div>
+					<a href="#" class="button hidden"><span>Continuar</span></a>
+
+				</div>
+			</header>
+		{% endblock %}
+
+		<!-- Menu -->
+		{% block navbar %}	
+			<div class="container-menu">
+				<div class="menu-box"><a href="#novedades" id="novedadesB">Novedades</a></div>
+				<div class="menu-box"><a href="#horarios" id="horariosB">Horarios</a></div>
+				<div class="menu-box"></div>
+				<div class="menu-box"><a href="#bibliografia" id="bibliografiaB">Bibliografía</a></div>
+				<div class="menu-box"><a href="#nosotros" id="nosotrosB">Nosotros</a></div>
+			</div>
+		{% endblock %}	
+		<!-- Presentation -->
+			<div class="container-agile">
+				<div class="box"><h1><span>Agile</span></h1></div>
+				<div class="box"><h1><span>Scrum</span></h1></div>
+				<div class="box"><h1><span>XP</span></h1></div>
+				<div class="box"><h1><span>LEAN</span></h1></div>
+				<div class="box"><h1><span>Kanban</span></h1></div>
+			</div>
+
+		{% block novedades %}	
+		<!-- Novedades -->
+			<div class="container-nov" id="novedades">
+				<h1>Novedades</h1>
+
+				<div class="nov">
+					<div class="tab">
+						<button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">Novedad 1</button>
+						<button class="tablinks" onclick="openNov(event, 'nov2')">Novedad 2</button>
+						<button class="tablinks" onclick="openNov(event, 'nov3')">Novedad 3</button>
+					  </div>
+					  
+					  <div id="nov1" class="tabcontent">
+						<h3>Novedad 1</h3>
+						<p>Ullamco labore laboris in consequat laborum et adipisicing mollit fugiat. Tempor commodo exercitation ad Lorem eiusmod occaecat pariatur reprehenderit irure eu et occaecat veniam nostrud. Ad qui occaecat quis elit minim aliqua in ea laboris culpa. Id aliqua ea laboris Lorem et. Velit excepteur do quis veniam.</p>
+					  </div>
+					  
+					  <div id="nov2" class="tabcontent">
+						<h3>Novedad 2</h3>
+						<p>Do amet ad laborum laboris Lorem id pariatur officia anim in fugiat laborum do minim. Dolore ad dolore in ipsum consequat sit anim aute duis ea sunt labore deserunt. Veniam eu consectetur dolore excepteur consequat amet excepteur eu dolor irure. Cillum aliquip labore ullamco ad irure incididunt eu eu reprehenderit eu ipsum. Do eiusmod voluptate quis consequat commodo. Laboris et pariatur ipsum non consequat.</p> 
+					  </div>
+					  
+					  <div id="nov3" class="tabcontent">
+						<h3>Novedad 3</h3>
+						<p>Mollit sunt officia sit exercitation incididunt. Exercitation reprehenderit consequat occaecat reprehenderit eiusmod sint cillum qui reprehenderit incididunt. Ut fugiat exercitation ex pariatur occaecat ullamco ut irure. Qui non voluptate consectetur exercitation culpa mollit. Ullamco qui velit mollit amet nisi minim consectetur eiusmod consectetur. Non velit ipsum excepteur ullamco qui sunt adipisicing Lorem ea ea.</p>
+					  </div>
+				</div>
+
+			</div>
+		{% endblock %}
+		
+		{% block horarios %}
+		<!-- Horarios -->
+			<div class="container-hs" id="horarios">
+				<h1>Horarios</h1>
+				<table class="horario">
+					<tr>
+						<th>Miércoles</th>
+						<th>Sábados</th>
+					</tr>
+					<tr>
+						<td>20:30-22:30</td>
+						<td>09:15-11:15</td>
+					</tr>
+				</table>
+				
+			</div>
+		{% endblock %}
+		
+		{% block biblio %}
+		<!-- Bibliografia -->
+			<div class="container-b" id="bibliografia">
+				<h1>Bibliográfia Propuesta</h1>
+			</div>
+		{% endblock %}
+		
+		{% block nosotros %}
+		<!-- Nosotros -->
+			<div class="container-n" id="nosotros">
+				<h1>Nosotros</h1>	
+			</div>
+		{% endblock %}	
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			
+		<!-- Scripts -->
+		{% block scripts %}
+			<script src="{% static 'web/js/jquery.min.js' %}"></script>
+			<script src="{% static 'web/js/skel.min.js' %}"></script>
+			<script src="{% static 'web/js/util.js' %}"></script>
+			<script src="{% static 'web/js/main.js' %}"></script>
+			<script src="{% static 'web/js/slowgoto.js' %}"></script>
+			<script src="{% static 'web/js/selectornovedades.js' %}"></script>
+			<script src="{% static 'web/js/gotop.js' %}"></script>
+		{% endblock %}	
+
+	</body>
 </html>
