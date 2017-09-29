@@ -1,0 +1,35 @@
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
+@import 'red-ballon.css';
+@import 'menu.css';
+@import 'presentation.css';
+@import 'novedades.css';
+@import 'horarios.css';
+@import 'bibliografia.css';
+@import 'nosotros.css';
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

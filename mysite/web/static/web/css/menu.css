@@ -1,0 +1,67 @@
+/* -----------Menu------------- */
+.container-menu{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container-menu .menu-box{
+    width: 20vw;
+    text-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+   /*  background: rgba(0, 0, 0, .1) */;
+    /* background: rgb(117, 72, 159); */
+    background: #D32F2F;
+}
+
+.container-menu .menu-box:nth-child(1){
+    border-right: 1px dotted black;
+    background: #B71C1C;
+}
+
+.container-menu .menu-box:nth-child(3){
+    background: -webkit-linear-gradient(left,#D32F2F , #F00222, #D32F2F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #D32F2F, #F00222, #D32F2F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #D32F2F, #F00222, #D32F2F); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#D32F2F , #F00222, #D32F2F); /* Standard syntax (must be last) */
+}
+
+.container-menu .menu-box:nth-child(5){
+    border-left: 1px dotted black;
+    background: #B71C1C;
+}
+
+.container-menu .menu-box a{
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    line-height: 8vh;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.container-menu .menu-box:hover{
+    background: rgba(231, 76, 60, .9);
+    transition: 1s;
+}
+
+.container-menu .menu-box:hover a{
+    color: rgba(0, 0, 0, .9);
+    transition: 1s;
+}
+
+.container-menu .menu-box:nth-child(3):hover{
+    background: -webkit-linear-gradient(left,#D32F2F , #F00222, #D32F2F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #D32F2F, #F00222, #D32F2F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #D32F2F, #F00222, #D32F2F); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right,#D32F2F , #F00222, #D32F2F); /* Standard syntax (must be last) */
+    cursor: default;
+}
