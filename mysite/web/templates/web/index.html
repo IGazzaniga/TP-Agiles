@@ -100,11 +100,39 @@
 		
 		{% block biblio %}
 		<!-- Bibliografia -->
-			<div class="container-b" id="bibliografia">
-				<h1>Bibliográfia Propuesta</h1>
+		<div class="container-b" id="bibliografia">
+			<h1>Bibliográfia Propuesta</h1>
+
+			<div class="lis-biblio">
+					<button class="accordion">Libro 1</button>
+					<div class="panel">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					
+					<button class="accordion">Libro 2</button>
+					<div class="panel">
+						  <p>	Reprehenderit aliqua non irure est nostrud enim.
+							   Lorem occaecat non pariatur sit. Consequat excepteur eu ea aliqua veniam.
+							Amet aliqua eiusmod id id consectetur. Proident consectetur mollit cillum magna
+							esse reprehenderit sunt voluptate. In enim anim dolor velit tempor tempor.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+					
+					<button class="accordion">Libro 3</button>
+					<div class="panel">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					  </p>
+					</div>
 			</div>
+
+		</div>
 		{% endblock %}
-		
+
+				
 		{% block nosotros %}
 		<!-- Nosotros -->
 			<div class="container-n" id="nosotros">
@@ -113,7 +141,15 @@
 		{% endblock %}	
 
 			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-			
+		
+		{% block twitter %}	
+		<!-- Boton Twitter -->
+			<button id="twtUp" onclick="twtPopUp()">twitter:@msitnyk</button>
+		
+				<div id="twitter-container">
+						<a class="twitter-timeline" data-lang="es" data-width="350" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/msitnyk?ref_src=twsrc%5Etfw">Tweets by msitnyk</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+		{% endblock %}	
 		<!-- Scripts -->
 		{% block scripts %}
 			<script src="{% static 'web/js/jquery.min.js' %}"></script>
@@ -123,6 +159,7 @@
 			<script src="{% static 'web/js/slowgoto.js' %}"></script>
 			<script src="{% static 'web/js/selectornovedades.js' %}"></script>
 			<script src="{% static 'web/js/gotop.js' %}"></script>
+			<script src="{% static 'web/js/viewBiblio.js' %}"></script>
 		{% endblock %}	
 
 	</body>

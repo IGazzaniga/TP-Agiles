@@ -4,13 +4,26 @@
     width: 100vw;
     height: 70vh;
     background:white;
-    text-align: left;
+   
     position: relative;
 }
 
 .container-n h1{
-    writing-mode: sideways-lr;
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+
     float: left;
+    left: -50px;
     margin-right: 100px;
     font-size: 60px;
 }

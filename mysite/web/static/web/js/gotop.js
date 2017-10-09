@@ -14,3 +14,14 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+var count = 0;
+    function twtPopUp(){
+        if (count == 0){
+            document.getElementById("twitter-container").style.display = "block";
+            count = 1;
+        }else{
+            document.getElementById("twitter-container").style.display = "none";
+            count = 0;
+        }
+    }
