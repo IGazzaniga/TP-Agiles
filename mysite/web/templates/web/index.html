@@ -51,29 +51,47 @@
 
 		{% block novedades %}	
 		<!-- Novedades -->
+		
 			<div class="container-nov" id="novedades">
 				<h1>Novedades</h1>
 
 				<div class="nov">
+						
 					<div class="tab">
-						<button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">Novedad 1</button>
-						<button class="tablinks" onclick="openNov(event, 'nov2')">Novedad 2</button>
-						<button class="tablinks" onclick="openNov(event, 'nov3')">Novedad 3</button>
+						<button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">{{ novedades.0.titulo }}</button>
+						<button class="tablinks" onclick="openNov(event, 'nov2')">{{ novedades.1.titulo }}</button>
+						<button class="tablinks" onclick="openNov(event, 'nov3')">{{ novedades.2.titulo }}</button>
+						<button class="tablinks" onclick="openNov(event, 'nov4')">{{ novedades.3.titulo }}</button>
+						<button class="tablinks" onclick="openNov(event, 'nov5')">{{ novedades.4.titulo }}</button>
 					  </div>
-					  
 					  <div id="nov1" class="tabcontent">
-						<h3>Novedad 1</h3>
-						<p>Ullamco labore laboris in consequat laborum et adipisicing mollit fugiat. Tempor commodo exercitation ad Lorem eiusmod occaecat pariatur reprehenderit irure eu et occaecat veniam nostrud. Ad qui occaecat quis elit minim aliqua in ea laboris culpa. Id aliqua ea laboris Lorem et. Velit excepteur do quis veniam.</p>
+						<h3>{{ novedades.0.titulo }}</h3>
+						<h5>Publicado el: {{ novedades.0.fechaP }}</h5>
+						<p>{{ novedades.0.contenido }}</p>
 					  </div>
 					  
 					  <div id="nov2" class="tabcontent">
-						<h3>Novedad 2</h3>
-						<p>Do amet ad laborum laboris Lorem id pariatur officia anim in fugiat laborum do minim. Dolore ad dolore in ipsum consequat sit anim aute duis ea sunt labore deserunt. Veniam eu consectetur dolore excepteur consequat amet excepteur eu dolor irure. Cillum aliquip labore ullamco ad irure incididunt eu eu reprehenderit eu ipsum. Do eiusmod voluptate quis consequat commodo. Laboris et pariatur ipsum non consequat.</p> 
-					  </div>
+						<h3>{{ novedades.1.titulo }}</h3>
+						<h5>Publicado el: {{ novedades.1.fechaP }}</h5>
+						<p>{{ novedades.1.contenido }}</p>
+					</div>
 					  
 					  <div id="nov3" class="tabcontent">
-						<h3>Novedad 3</h3>
-						<p>Mollit sunt officia sit exercitation incididunt. Exercitation reprehenderit consequat occaecat reprehenderit eiusmod sint cillum qui reprehenderit incididunt. Ut fugiat exercitation ex pariatur occaecat ullamco ut irure. Qui non voluptate consectetur exercitation culpa mollit. Ullamco qui velit mollit amet nisi minim consectetur eiusmod consectetur. Non velit ipsum excepteur ullamco qui sunt adipisicing Lorem ea ea.</p>
+						<h3>{{ novedades.2.titulo }}</h3>
+						<h5>Publicado el: {{ novedades.2.fechaP }}</h5>
+						<p>{{ novedades.2.contenido }}</p>
+					  </div>
+
+					  <div id="nov4" class="tabcontent">
+							<h3>{{ novedades.3.titulo }}</h3>
+							<h5>Publicado el: {{ novedades.3.fechaP }}</h5>
+							<p>{{ novedades.3.contenido }}</p>
+						  </div>
+
+					<div id="nov5" class="tabcontent">
+						<h3>{{ novedades.4.titulo }}</h3>
+						<h5>Publicado el: {{ novedades.4.fechaP }}</h5>
+						<p>{{ novedades.4.contenido }}</p>
 					  </div>
 				</div>
 
