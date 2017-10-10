@@ -1,0 +1,46 @@
+<!-- Novedades -->
+
+    <div class="container-nov" id="novedades">
+        <h1>Novedades</h1>
+
+        <div class="nov">
+                
+            <div class="tab">
+                <button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">{{ novedades.0.titulo }}</button>
+                <button class="tablinks" onclick="openNov(event, 'nov2')">{{ novedades.1.titulo }}</button>
+                <button class="tablinks" onclick="openNov(event, 'nov3')">{{ novedades.2.titulo }}</button>
+                <button class="tablinks" onclick="openNov(event, 'nov4')">{{ novedades.3.titulo }}</button>
+                <button class="tablinks" onclick="openNov(event, 'nov5')">{{ novedades.4.titulo }}</button>
+              </div>
+              <div id="nov1" class="tabcontent">
+                <h3>{{ novedades.0.titulo }}</h3>
+                <h5>Publicado el: {{ novedades.0.fechaP }}</h5>
+                <p>{{ novedades.0.contenido }}</p>
+              </div>
+              
+              <div id="nov2" class="tabcontent">
+                <h3>{{ novedades.1.titulo }}</h3>
+                <h5>Publicado el: {{ novedades.1.fechaP }}</h5>
+                <p>{{ novedades.1.contenido }}</p>
+            </div>
+              
+              <div id="nov3" class="tabcontent">
+                <h3>{{ novedades.2.titulo }}</h3>
+                <h5>Publicado el: {{ novedades.2.fechaP }}</h5>
+                <p>{{ novedades.2.contenido }}</p>
+              </div>
+
+              <div id="nov4" class="tabcontent">
+                    <h3>{{ novedades.3.titulo }}</h3>
+                    <h5>Publicado el: {{ novedades.3.fechaP }}</h5>
+                    <p>{{ novedades.3.contenido }}</p>
+                  </div>
+
+            <div id="nov5" class="tabcontent">
+                <h3>{{ novedades.4.titulo }}</h3>
+                <h5>Publicado el: {{ novedades.4.fechaP }}</h5>
+                <p>{{ novedades.4.contenido }}</p>
+              </div>
+        </div>
+
+    </div>

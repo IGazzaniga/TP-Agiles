@@ -11,165 +11,39 @@
 	<body>
 
 		<!-- Header -->
-		{% block header %}
-			<header id="header">
-				<div class="inner">
-					<div class="content">
-						<h1>Metodologías Ágiles</h1>
-						<ul>
-							<li><a href="https://trello.com/b/PpyiZnTl/utn-frlp-%C3%A1giles" target="_blank">Trello</a></li>
-							<li><a href="https://utn-frlp-agile.slack.com/messages/G6JJMDVCG/" target="_blank">Slack</a></li>
-						</ul>
-						
-						
-						<a href="#" class="button big alt"><span>Continuar</span></a>
-					</div>
-					<a href="#" class="button hidden"><span>Continuar</span></a>
-
-				</div>
-			</header>
-		{% endblock %}
+		{% include 'web/header.html' %}
 
 		<!-- Menu -->
-		{% block navbar %}	
-			<div class="container-menu">
-				<div class="menu-box"><a href="#novedades" id="novedadesB">Novedades</a></div>
-				<div class="menu-box"><a href="#horarios" id="horariosB">Horarios</a></div>
-				<div class="menu-box"></div>
-				<div class="menu-box"><a href="#bibliografia" id="bibliografiaB">Bibliografía</a></div>
-				<div class="menu-box"><a href="#nosotros" id="nosotrosB">Nosotros</a></div>
-			</div>
-		{% endblock %}	
+		
+		{% include 'web/menu.html' %}
+			
 		<!-- Presentation -->
-			<div class="container-agile">
-				<div class="box"><h1><span>Agile</span></h1></div>
-				<div class="box"><h1><span>Scrum</span></h1></div>
-				<div class="box"><h1><span>XP</span></h1></div>
-				<div class="box"><h1><span>LEAN</span></h1></div>
-				<div class="box"><h1><span>Kanban</span></h1></div>
-			</div>
-
-		{% block novedades %}	
+		{% include 'web/presentacion.html' %}
+		
 		<!-- Novedades -->
-		
-			<div class="container-nov" id="novedades">
-				<h1>Novedades</h1>
+		{% include 'web/novedades.html' %}
 
-				<div class="nov">
-						
-					<div class="tab">
-						<button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">{{ novedades.0.titulo }}</button>
-						<button class="tablinks" onclick="openNov(event, 'nov2')">{{ novedades.1.titulo }}</button>
-						<button class="tablinks" onclick="openNov(event, 'nov3')">{{ novedades.2.titulo }}</button>
-						<button class="tablinks" onclick="openNov(event, 'nov4')">{{ novedades.3.titulo }}</button>
-						<button class="tablinks" onclick="openNov(event, 'nov5')">{{ novedades.4.titulo }}</button>
-					  </div>
-					  <div id="nov1" class="tabcontent">
-						<h3>{{ novedades.0.titulo }}</h3>
-						<h5>Publicado el: {{ novedades.0.fechaP }}</h5>
-						<p>{{ novedades.0.contenido }}</p>
-					  </div>
-					  
-					  <div id="nov2" class="tabcontent">
-						<h3>{{ novedades.1.titulo }}</h3>
-						<h5>Publicado el: {{ novedades.1.fechaP }}</h5>
-						<p>{{ novedades.1.contenido }}</p>
-					</div>
-					  
-					  <div id="nov3" class="tabcontent">
-						<h3>{{ novedades.2.titulo }}</h3>
-						<h5>Publicado el: {{ novedades.2.fechaP }}</h5>
-						<p>{{ novedades.2.contenido }}</p>
-					  </div>
-
-					  <div id="nov4" class="tabcontent">
-							<h3>{{ novedades.3.titulo }}</h3>
-							<h5>Publicado el: {{ novedades.3.fechaP }}</h5>
-							<p>{{ novedades.3.contenido }}</p>
-						  </div>
-
-					<div id="nov5" class="tabcontent">
-						<h3>{{ novedades.4.titulo }}</h3>
-						<h5>Publicado el: {{ novedades.4.fechaP }}</h5>
-						<p>{{ novedades.4.contenido }}</p>
-					  </div>
-				</div>
-
-			</div>
-		{% endblock %}
-		
-		{% block horarios %}
 		<!-- Horarios -->
-			<div class="container-hs" id="horarios">
-				<h1>Horarios</h1>
-				<table class="horario">
-					<tr>
-						<th>Miércoles</th>
-						<th>Sábados</th>
-					</tr>
-					<tr>
-						<td>20:30-22:30</td>
-						<td>09:15-11:15</td>
-					</tr>
-				</table>
-				
-			</div>
-		{% endblock %}
+		{% include 'web/horarios.html' %}
 		
-		{% block biblio %}
 		<!-- Bibliografia -->
-		<div class="container-b" id="bibliografia">
-			<h1>Bibliográfia Propuesta</h1>
+		{% include 'web/bibliografia.html' %}
 
-			<div class="lis-biblio">
-					<button class="accordion">Libro 1</button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					
-					<button class="accordion">Libro 2</button>
-					<div class="panel">
-						  <p>	Reprehenderit aliqua non irure est nostrud enim.
-							   Lorem occaecat non pariatur sit. Consequat excepteur eu ea aliqua veniam.
-							Amet aliqua eiusmod id id consectetur. Proident consectetur mollit cillum magna
-							esse reprehenderit sunt voluptate. In enim anim dolor velit tempor tempor.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
-					</div>
-					
-					<button class="accordion">Libro 3</button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					  </p>
-					</div>
-			</div>
+		<!-- Nosotros -->		
+		{% include 'web/nosotros.html' %}
 
-		</div>
-		{% endblock %}
-
-				
-		{% block nosotros %}
-		<!-- Nosotros -->
-			<div class="container-n" id="nosotros">
-				<h1>Nosotros</h1>	
-			</div>
-		{% endblock %}	
-
-			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		
-		{% block twitter %}	
+		
 		<!-- Boton Twitter -->
 			<button id="twtUp" onclick="twtPopUp()">twitter:@msitnyk</button>
 		
 				<div id="twitter-container">
 						<a class="twitter-timeline" data-lang="es" data-width="350" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/msitnyk?ref_src=twsrc%5Etfw">Tweets by msitnyk</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
-		{% endblock %}	
+		
 		<!-- Scripts -->
-		{% block scripts %}
+		
 			<script src="{% static 'web/js/jquery.min.js' %}"></script>
 			<script src="{% static 'web/js/skel.min.js' %}"></script>
 			<script src="{% static 'web/js/util.js' %}"></script>
@@ -178,7 +52,7 @@
 			<script src="{% static 'web/js/selectornovedades.js' %}"></script>
 			<script src="{% static 'web/js/gotop.js' %}"></script>
 			<script src="{% static 'web/js/viewBiblio.js' %}"></script>
-		{% endblock %}	
+			
 
 	</body>
 </html>
