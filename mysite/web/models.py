@@ -15,7 +15,7 @@ class Novedad(models.Model):
 class Trabajo(models.Model):
     """Una oferta de trabajo"""
     titulo = models.CharField(max_length=30) #Titulo de la oferta
-    descripcion = models.TextField() #Descripción de la oferta
+    descripcion = models.TextField() #Descripcion de la oferta
     fechaP = models.DateTimeField('fecha de publicacion')
     disponible = models.BooleanField(default=True) #True si la oferta sigue disponible, False en caso contrario
 
