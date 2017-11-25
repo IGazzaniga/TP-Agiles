@@ -25,3 +25,17 @@ $("#nosotrosB").click(function(e){
         scrollTop: $("#nosotros").offset().top
     }, 2000);
 });
+
+$("#jobsB").click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#jobs").offset().top
+    }, 2000);
+});
+
+$("#idB").click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#id").offset().top
+    }, 2000);
+});
