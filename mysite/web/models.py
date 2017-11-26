@@ -1,5 +1,6 @@
 import datetime
 from django.db import models
+from django.contrib import admin
 from django.utils import timezone
 # Create your models here.
 class Novedad(models.Model):
@@ -22,4 +23,7 @@ class Trabajo(models.Model):
 class Investigacion(models.Model):
     """Un tema de I+D"""
     titulo = models.CharField(max_length=30) #Titulo de la novedad
+    autor = models.CharField(blank=True, max_length=200) #Quién investigó el tema
+    archivo = models.FileField(blank=True, upload_to='web/uploads/%Y/%m/%d/')
+    
     
