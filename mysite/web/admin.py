@@ -4,6 +4,6 @@ from django.contrib import admin
 from .models import Novedad
 
 class NovedadAdmin(admin.ModelAdmin):
-    fields = ['titulo', 'contenido', 'fechaP', 'tags']
+    fields = ['titulo', 'contenido', 'fechaP']
 
 admin.site.register(Novedad, NovedadAdmin)
