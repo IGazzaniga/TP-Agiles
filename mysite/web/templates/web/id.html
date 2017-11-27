@@ -1,12 +1,26 @@
 <!-- Investigacion y desarrollo -->
-<div class="container-id" id="id">
-    <h1>Temas de I+D</h1>
-    {% for id in ids %}
-        <h2>{{id.titulo}}</h2>
-            {% if id.autor and id.archivo %}
-                <p>Tema investigado por {{id.autor}}</p>
-                <a href="{{id.archivo}}" download>Descargue el PDF de {{id.titulo}} realizado por {{id.autor}}</a>
-            {% endif %}
-    {% endfor %}
-                    
-</div>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metodologías Ágiles | Bolsa de I+D</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+        <link rel="stylesheet" href="{% static 'web/css/style.css' %}"> 
+    </head>
+    <body>
+        <div class="container-id" id="id">
+            <h1>Temas de I+D</h1>
+            <div class="temas">
+            {% for id in ids %}
+                <h2>{{id.titulo}}</h2>
+                    {% if id.autor and id.archivo %}
+                        <p>Tema investigado por {{id.autor}}</p>
+                        <a href="{{id.archivo}}" download>Descargue el PDF de {{id.titulo}} realizado por {{id.autor}}</a>
+                    {% endif %}
+            {% endfor %}
+            </div>
+        </div> 
+    </body>
+</html>

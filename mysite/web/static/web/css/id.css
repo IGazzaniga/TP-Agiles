@@ -1,0 +1,41 @@
+.container-id{
+    width: auto;
+    display: block;
+    overflow: hidden;
+    background:linear-gradient(90deg, #F00222, #75489F);
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+}
+.temas{
+    position: relative;
+    top: 20vh;
+    left: 0vw;
+    width: 90vw;
+    font-size: 20px;
+    margin: auto;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:#231E6D;
+}
+.container-id:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 250px;
+    background:url(../img/wave3.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    z-index: 0;
+}
+
+.container-id h1{
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+}

@@ -1,10 +1,24 @@
 <!-- Empleos -->
-
-<div class="container-nov" id="jobs">
-    <h1>Empleos</h1>
-    {% for trabajo in trabajos %}
-      <h2>{{trabajo.titulo}}</h2>
-        <p>{{trabajo.fechaP}}</p>
-        <p>{{trabajo.descripcion}}</p>
-    {% endfor %}
-</div>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metodologías Ágiles | Bolsa de trabajo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+        <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    </head> 
+    <body>
+        <div class="container-jobs" id="jobs">
+            <h1>Empleos</h1>
+            <div class="empleos">
+            {% for trabajo in trabajos %}
+                <h2>{{trabajo.titulo}}</h2>
+                <p>Fecha de publicación: {{trabajo.fechaP}}</p>
+                <p>Descripción: {{trabajo.descripcion}}</p>
+            {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
