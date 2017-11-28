@@ -23,7 +23,7 @@ class Trabajo(models.Model):
 class Investigacion(models.Model):
     """Un tema de I+D"""
     titulo = models.CharField(max_length=30) #Titulo de la novedad
-    autor = models.CharField(blank=True, max_length=200) #Quién investigó el tema
+    autor = models.CharField(blank=True, max_length=200) #Quien investigo el tema
     archivo = models.FileField(blank=True, upload_to='web/uploads/%Y/%m/%d/')
     
     
