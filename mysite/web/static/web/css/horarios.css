@@ -61,3 +61,56 @@ th:hover ,td:hover{
     font-size: 50px;
     top: 200px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .container-hs h1{
+        /* Safari */
+    -webkit-transform: rotate(0deg);
+    
+        /* Firefox */
+        -moz-transform: rotate(0deg);
+    
+        /* IE */
+        -ms-transform: rotate(0deg);
+    
+        /* Opera */
+        -o-transform: rotate(0deg);
+
+        left: 0px;
+        top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 550px){
+    .container-hs h1{
+        font-size: 40px;
+    }
+
+    .horario{
+        top: 15vh;
+        left: 0vw;
+        width: 50vw;
+        height: 30vh;
+        font-size: 30px;
+    }
+
+    .horario{
+        border-radius: 0;
+    }
+
+    table, th, td, tr{
+        border: 2px solid black;
+    }
+  }
+
+  @media only screen and (max-width: 380px){
+    .container-hs h1{
+        font-size: 40px;
+    }
+
+    .horario{
+        width: 30vw;
+        height: 20vh;
+        font-size: 20px;
+    }
+  }
