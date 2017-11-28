@@ -5,7 +5,11 @@
     position: relative;
     overflow-x:auto;
 }
-
+@media only screen and (max-width: 1000px) {
+    .container-hs{
+       height: 65vh;
+    }
+  }
 .horario{
     position: relative;
     top: 20vh;
@@ -76,7 +80,7 @@ th:hover ,td:hover{
         /* Opera */
         -o-transform: rotate(0deg);
 
-        left: 0px;
+        left: 5vw;
         top: 0px;
     }
   }
@@ -109,7 +113,7 @@ th:hover ,td:hover{
     }
 
     .horario{
-        width: 30vw;
+        width: 90vw;
         height: 20vh;
         font-size: 20px;
     }

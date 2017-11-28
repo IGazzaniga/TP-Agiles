@@ -30,7 +30,31 @@
     font-size: 50px;
     top: 200px;
 }
+@media only screen and (max-width: 1000px) {
+    .container-n h1{
+        
+    /* Safari */
+    -webkit-transform: rotate(0deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(0deg);
+    
+    /* IE */
+    -ms-transform: rotate(0deg);
+    
+    /* Opera */
+    -o-transform: rotate(0deg);
+    left: 5vw;
+    top: 0px;
+    margin-top: 0;
+    }
+}
 
+@media only screen and (max-width: 550px){
+    .container-n h1{
+        font-size: 40px;
+    }
+}
 
 
 #profes{
@@ -52,6 +76,10 @@
 
 #emilio{
    margin-right: 40px;
+   margin-top: 10vh;
+}
+#martin{
+    margin-right: 40px;
 }
 
 .rounded-circle{

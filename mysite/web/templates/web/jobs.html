@@ -13,11 +13,15 @@
         <div class="container-jobs" id="jobs">
             <h1>Empleos</h1>
             <div class="empleos">
-            {% for trabajo in trabajos %}
-                <h2>{{trabajo.titulo}}</h2>
-                <p>Fecha de publicación: {{trabajo.fechaP}}</p>
-                <p>Descripción: {{trabajo.descripcion}}</p>
-            {% endfor %}
+                {% if trabajos %}
+                    {% for trabajo in trabajos %}
+                    <h2>{{trabajo.titulo}}</h2>
+                    <p>Fecha de publicación: {{trabajo.fechaP}}</p>
+                    <p>Descripción: {{trabajo.descripcion}}</p>
+                    {% endfor %}
+                {% else %}
+                    <h2>No hay trabajos cargados aún</h2>
+                {% endif %}
             </div>
         </div>
     </body>

@@ -15,9 +15,11 @@
             <div class="temas">
             {% for id in ids %}
                 <h2>{{id.titulo}}</h2>
-                    {% if id.autor and id.archivo %}
+                    {% if id.autor %}
                         <p>Tema investigado por {{id.autor}}</p>
+                    {% if id.archivo %}     
                         <a href="{{id.archivo}}" download>Descargue el PDF de {{id.titulo}} realizado por {{id.autor}}</a>
+                    {% endif %}
                     {% endif %}
             {% endfor %}
             </div>

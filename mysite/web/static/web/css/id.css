@@ -1,10 +1,10 @@
 .container-id{
     width: auto;
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
     background:linear-gradient(90deg, #F00222, #75489F);
     position: relative;
-    height: auto;
+    height: 100vh;
     min-height: 100% !important;
 }
 .temas{
