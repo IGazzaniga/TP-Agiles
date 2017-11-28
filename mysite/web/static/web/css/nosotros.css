@@ -67,20 +67,20 @@
 
 #martin, #emilio{
     display: inline-block;
+    padding: 10vw;
 }
 
 #mail{
     color:black;
     text-decoration: none;
+    padding-bottom: 20vh;
 }
 
 #emilio{
-   margin-right: 40px;
-   margin-top: 10vh;
+  margin-top: 10vh;
 }
-#martin{
-    margin-right: 40px;
-}
+
+
 
 .rounded-circle{
     border-radius: 50%;
