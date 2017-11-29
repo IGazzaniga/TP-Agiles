@@ -32,7 +32,10 @@
         font-size: 40px;
     }
 }
+
+
 .nov{
+    display: block;
     position: absolute;
     top: 11vh;
     left: 10vw;
@@ -63,6 +66,7 @@ div.tab button {
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -83,3 +87,52 @@ div.tab button.active {
     border-left: none;
     height: 70vh;
 }
+
+/* A partir de acá comienza el css para el accordion responsive */
+.container-nov-res{
+    display: none;
+    position: absolute;
+    width: 67vw;
+    height: 200px;
+    margin-top: 11vh;
+    margin-left: 15vw;
+}
+
+
+@media only screen and (max-width: 1170px){
+    #nov-res{
+        display: block;
+    }
+
+    .nov{
+        display: none;
+    }
+}
+    .container-nov-res .accordeon {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 0px;
+        margin-bottom: 5px;  
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    button.accordeon.active, button.accordeon:hover {
+        background-color: #ccc;
+    }
+    
+    div.panel {
+        padding: 0;
+       /*  background-color: white; */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-out;
+    }
+    
+

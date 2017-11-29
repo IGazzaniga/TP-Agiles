@@ -7,7 +7,7 @@
                 
             <div class="tab">
                 <button class="tablinks" onclick="openNov(event, 'nov1')" id="defaultOpen">{{ novedades.0.titulo }}</button>
-                <button class="tablinks" onclick="openNov(event, 'nov2')">{{ novedades.1.titulo }}</button>
+                <button class="tablinks" onclick="openNov(event, 'nov2')"> {{ novedades.1.titulo }}</button>
                 <button class="tablinks" onclick="openNov(event, 'nov3')">{{ novedades.2.titulo }}</button>
                 <button class="tablinks" onclick="openNov(event, 'nov4')">{{ novedades.3.titulo }}</button>
                 <button claLibro 1ss="tablinks" onclick="openNov(event, 'nov5')">{{ novedades.4.titulo }}</button>
@@ -43,4 +43,38 @@
               </div>
         </div>
 
+
+        <div class="container-nov-res" id="nov-res">
+            <button class="accordeon">{{ novedades.0.titulo }}</button>
+            <div class="panel">
+              <h5>Publicado el: {{ novedades.0.fechaP }}</h5>
+              <p>{{ novedades.0.contenido }}</p>
+            </div>
+            
+            <button class="accordeon">{{ novedades.1.titulo }}</button>
+            <div class="panel">
+              <h5>Publicado el: {{ novedades.1.fechaP }}</h5>
+              <p>{{ novedades.1.contenido }}</p>
+            </div>
+            
+            <button class="accordeon">{{ novedades.2.titulo }}</button>
+            <div class="panel">
+              <h5>Publicado el: {{ novedades.2.fechaP }}</h5>
+              <p>{{ novedades.2.contenido }}</p>
+            </div>
+
+            <button class="accordeon">{{ novedades.3.titulo }}</button>
+            <div class="panel">
+              <h5>Publicado el: {{ novedades.3.fechaP }}</h5>
+              <p>{{ novedades.3.contenido }}</p>
+            </div>
+
+            <button class="accordeon">{{ novedades.4.titulo }}</button>
+            <div class="panel">
+              <h5>Publicado el: {{ novedades.3.fechaP }}</h5>
+              <p>{{ novedades.3.contenido }}</p>
+            </div>
+        </div>
+
     </div>
+    

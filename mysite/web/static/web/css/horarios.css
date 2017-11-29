@@ -107,14 +107,25 @@ th:hover ,td:hover{
     }
   }
 
-  @media only screen and (max-width: 380px){
+  /* @media only screen and (max-width: 380px){
+
     .container-hs h1{
         font-size: 40px;
     }
 
     .horario{
-        width: 90vw;
-        height: 20vh;
-        font-size: 20px;
+        top: 15vh;
+        left: 0vw;
+        width: 30vw;
+        height: 30vh;
+        font-size: 30px;
     }
-  }
+
+    .horario{
+        border-radius: 0;
+    }
+
+    table, th, td, tr{
+        border: 2px solid black;
+    }
+  } */
